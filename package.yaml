@@ -1,0 +1,69 @@
+author: Hardy Jones
+category: Web
+copyright: 2018 Hardy Jones
+homepage: https://github.com/joneshf/purcel#readme
+license: BSD3
+maintainer: jones3.hardy@gmail.com
+name: purcel
+version: 0.1.0.0
+
+default-extensions:
+  - BangPatterns
+  - BinaryLiterals
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - DeriveDataTypeable
+  - DeriveGeneric
+  - DeriveTraversable
+  - DoAndIfThenElse
+  - EmptyDataDecls
+  - ExistentialQuantification
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - InstanceSigs
+  - KindSignatures
+  - LambdaCase
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PackageImports
+  - PartialTypeSignatures
+  - PatternGuards
+  - PolyKinds
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TupleSections
+  - TypeFamilies
+  - ViewPatterns
+
+dependencies:
+  - base == 4.10.1.0
+  - rio == 0.0.1.0
+
+executables:
+  purcel:
+    main: Main.hs
+    source-dirs: src
+
+extra-source-files:
+  - README.md
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -Widentities
+  - -Wimplicit-prelude
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-exported-signatures
+  - -Wmissing-home-modules
+  - -Wmissing-local-signatures
+  - -Wmonomorphism-restriction
+  - -Wredundant-constraints
