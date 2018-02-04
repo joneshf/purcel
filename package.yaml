@@ -45,10 +45,14 @@ default-extensions:
 
 dependencies:
   - base == 4.10.1.0
+  - dhall == 1.9.0
   - rio == 0.0.1.0
 
 executables:
   purcel:
+    dependencies:
+      - optparse-applicative == 0.14.0.0
+      - purcel
     main: Main.hs
     source-dirs: src
 
@@ -67,3 +71,13 @@ ghc-options:
   - -Wmissing-local-signatures
   - -Wmonomorphism-restriction
   - -Wredundant-constraints
+
+library:
+  source-dirs: lib
+
+tests:
+  purescript:
+    dependencies:
+      - purcel
+    main: Main.hs
+    source-dirs: test
