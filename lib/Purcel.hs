@@ -1,14 +1,21 @@
 module Purcel where
 
 import "rio" RIO
+import "rio" RIO.FilePath ((</>))
 
 import "dhall" Dhall (Interpret)
 
-main :: (HasLogFunc env, HasReadPurcel env) => DhallFile -> RIO env ()
+import qualified "rio" RIO.FilePath
+
+main ::
+  (HasLogFunc env, HasReadPurcel env, HasWriteModules env) =>
+  DhallFile ->
+  RIO env ()
 main dhallFile = do
   logDebug "Reading Dhall file and fetching dependencies"
-  _ <- readPurcel dhallFile
+  Purcel { dependencies } <- readPurcel dhallFile
   logDebug "Writing dependencies to files"
+  writeModules dependencies (RIO.FilePath.takeDirectory dhallFile </> ".purcel")
 
 data Purcel
   = Purcel
@@ -45,10 +52,28 @@ readPurcel dhall = do
   f <- view readPurcelL
   liftIO $ f dhall
 
+type PurcelDirectory = FilePath
+
+type WriteModules = [Module] -> PurcelDirectory -> IO ()
+
+class HasWriteModules env where
+  writeModulesL :: SimpleGetter env WriteModules
+
+writeModules ::
+  forall env f.
+  (HasWriteModules env, MonadIO f, MonadReader env f) =>
+  [Module] ->
+  PurcelDirectory ->
+  f ()
+writeModules modules directory = do
+  f <- view writeModulesL
+  liftIO $ f modules directory
+
 data Env
   = Env
     { envLogFunc    :: !LogFunc
     , envReadPurcel :: !ReadPurcel
+    , envWriteModules :: !WriteModules
     }
 
 instance HasLogFunc Env where
@@ -56,3 +81,6 @@ instance HasLogFunc Env where
 
 instance HasReadPurcel Env where
   readPurcelL = to envReadPurcel
+
+instance HasWriteModules Env where
+  writeModulesL = to envWriteModules
