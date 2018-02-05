@@ -21,7 +21,7 @@ data Purcel
   = Purcel
     { package      :: !Text
     , dependencies :: ![Module]
-    , modules      :: ![Text]
+    , modules      :: ![Module]
     }
   deriving (Generic)
 

@@ -1,7 +1,4 @@
-let purcel : { package : Text
-             , modules : List ./Module.dhall
-             , dependencies : List ./Module.dhall
-             }
+let purcel : ./Purcel.dhall
            = { package = "eff"
              , modules =
                [ { name = "Control/Monad/Eff.js"

@@ -1,10 +1,9 @@
-let purcel : { package : Text
-             , modules : List Text
-             , dependencies : List ./Module.dhall
-             }
+let purcel : ./Purcel.dhall
            = { package = "test"
              , modules =
-               [ "Main"
+               [ { name = "Main"
+                 , contents = ./Main.purs as Text
+                 }
                ]
              , dependencies = (./prelude.dhall).modules
                # (./console.dhall).modules
