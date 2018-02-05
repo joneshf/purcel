@@ -1,0 +1,3 @@
+{ name : Text
+, contents : Text
+}

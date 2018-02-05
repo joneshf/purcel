@@ -21,7 +21,7 @@ import qualified "rio" RIO.Text.Lazy
 import qualified "purcel" Purcel
 
 main :: IO ()
-main = runRIO env $ Purcel.main "./test/purcel.dhall"
+main = runRIO env $ Purcel.main "./test/test.dhall"
 
 env :: Env
 env = Env { envLogFunc, envReadPurcel, envWriteModules }
