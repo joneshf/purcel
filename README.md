@@ -49,7 +49,7 @@ Some things we want to do are:
 Currently, purcel relies heavily on [Dhall][].
 The configuration format is written in [Dhall][].
 The fetching of files uses [Dhall][]s import mechanism.
-The binary is little more than a wrapper that just pipes text to a file.
+The binary is little more than a wrapper that pipes text to a file.
 Since [Dhall][] is a full fledged programming language (with restrictions),
 we rely on it to provide extensibility and experimentation.
 
@@ -65,7 +65,7 @@ A purcel has a name, a list of modules it provides and a list of dependencies:
 }
 ```
 
-A `Module` is just a hierarchical name and the contents of the module:
+A `Module` is a hierarchical name and the contents of the module:
 
 ```Dhall
 { name : Text
@@ -80,7 +80,7 @@ From that, we can build new ideas of purcels that we might find interesting.
 The standard purcel is very much in line with what a library might look like.
 But, what if we're building an application?
 If nobody is going to consume our purcel, we don't need to put any `modules` together at all.
-We could make a new idea of a purcel that just left that `modules` field off:
+We could make a new idea of a purcel that left that `modules` field off:
 
 ```Dhall
 { package : Text
