@@ -77,7 +77,7 @@ data Env
     }
 
 instance HasLogFunc Env where
-  logFuncL = to envLogFunc
+  logFuncL f env = (\envLogFunc -> env {envLogFunc}) <$> f (envLogFunc env)
 
 instance HasReadPurcel Env where
   readPurcelL = to envReadPurcel

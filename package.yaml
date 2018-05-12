@@ -44,14 +44,14 @@ default-extensions:
   - ViewPatterns
 
 dependencies:
-  - base == 4.10.1.0
-  - dhall == 1.9.0
-  - rio == 0.0.1.0
+  - base == 4.11.1.0
+  - dhall == 1.13.1
+  - rio == 0.1.2.0
 
 executables:
   purcel:
     dependencies:
-      - optparse-applicative == 0.14.0.0
+      - optparse-applicative == 0.14.2.0
       - purcel
     main: Main.hs
     source-dirs: src

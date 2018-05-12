@@ -36,7 +36,9 @@ import qualified "purcel" Purcel
 main :: IO ()
 main = do
   Options { debug, detailedErrors, dhallFile } <- execParser parserInfo
-  runRIO (env debug detailedErrors) $ Purcel.main dhallFile
+  logOptions <- logOptionsHandle stderr (debug == YesDebug)
+  withLogFunc logOptions $ \logFunc ->
+    runRIO (env logFunc detailedErrors) $ Purcel.main dhallFile
 
 parserInfo :: ParserInfo Options
 parserInfo =
@@ -77,23 +79,11 @@ data DetailedErrors
 data Debug
   = NoDebug
   | YesDebug
+  deriving (Eq)
 
-env :: Debug -> DetailedErrors -> Env
-env debug detailedErrors = Env { envLogFunc, envReadPurcel, envWriteModules }
+env :: LogFunc -> DetailedErrors -> Env
+env envLogFunc detailedErrors = Env { envLogFunc, envReadPurcel, envWriteModules }
   where
-  envLogFunc cs source level str =
-    withStickyLogger logOptions $ \f -> f cs source level str
-    where
-    logOptions = LogOptions
-      { logMinLevel = case debug of
-          NoDebug  -> LevelInfo
-          YesDebug -> LevelDebug
-      , logTerminal = True
-      , logUseColor = True
-      , logUseTime = False
-      , logUseUnicode = True
-      , logVerboseFormat = True
-      }
   envReadPurcel :: DhallFile -> IO Purcel
   envReadPurcel = case detailedErrors of
     NoDetailedErrors  -> input auto . RIO.Text.Lazy.pack

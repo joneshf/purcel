@@ -21,22 +21,14 @@ import qualified "rio" RIO.Text.Lazy
 import qualified "purcel" Purcel
 
 main :: IO ()
-main = runRIO env $ Purcel.main "./test/test.dhall"
+main = do
+  (_, logOptions) <- logOptionsMemory
+  withLogFunc logOptions $ \logFunc ->
+    runRIO (env logFunc) $ Purcel.main "./test/test.dhall"
 
-env :: Env
-env = Env { envLogFunc, envReadPurcel, envWriteModules }
+env :: LogFunc -> Env
+env envLogFunc = Env { envLogFunc, envReadPurcel, envWriteModules }
   where
-  envLogFunc cs source level str =
-    withStickyLogger logOptions $ \f -> f cs source level str
-    where
-    logOptions = LogOptions
-      { logMinLevel = LevelInfo
-      , logTerminal = True
-      , logUseColor = True
-      , logUseTime = False
-      , logUseUnicode = True
-      , logVerboseFormat = True
-      }
   envReadPurcel :: DhallFile -> IO Purcel
   envReadPurcel = detailed . input auto . RIO.Text.Lazy.pack
   envWriteModules :: [Module] -> PurcelDirectory -> IO ()

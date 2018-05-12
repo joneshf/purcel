@@ -1,6 +1,5 @@
 flags: {}
 packages:
-- .
-extra-deps:
-- rio-0.0.1.0
-resolver: nightly-2018-01-29
+  - .
+extra-deps: []
+resolver: nightly-2018-05-12
