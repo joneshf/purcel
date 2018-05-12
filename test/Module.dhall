@@ -1,3 +1,1 @@
-{ name : Text
-, contents : Text
-}
+{ name : Text, contents : Text }
