@@ -24,7 +24,7 @@ main :: IO ()
 main = do
   (_, logOptions) <- logOptionsMemory
   withLogFunc logOptions $ \logFunc ->
-    runRIO (env logFunc) $ Purcel.main "./test/test.dhall"
+    runRIO (env logFunc) $ Purcel.main "./test/purcel.dhall"
 
 env :: LogFunc -> Env
 env envLogFunc = Env { envLogFunc, envReadPurcel, envWriteModules }

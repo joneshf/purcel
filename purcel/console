@@ -1,5 +1,5 @@
     let purcel
-        : ./Purcel.dhall 
+        : ../types/Purcel 
         = { package =
               "console"
           , modules =
@@ -15,7 +15,7 @@
                 }
               ]
           , dependencies =
-              ./prelude.dhall .modules # ./eff.dhall .modules
+              ./prelude .modules # ./eff .modules
           }
 
 in  purcel

@@ -1,13 +1,13 @@
     let purcel
-        : ./Purcel.dhall 
+        : ../types/Purcel
         = { package =
               "test"
           , modules =
               [ { name = "Main", contents = ./Main.purs as Text } ]
           , dependencies =
-                ./prelude.dhall .modules
-              # ./console.dhall .modules
-              # ./eff.dhall .modules
+                ../purcel/prelude .modules
+              # ../purcel/console .modules
+              # ../purcel/eff .modules
           }
 
 in  purcel
