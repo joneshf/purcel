@@ -6,212 +6,212 @@
               [ { name =
                     "Control/Applicative.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Applicative.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Applicative.purs sha256:0c9f012c8ed3b761215bdfa5017feab8b07b8d549b464a5b48399808a5a0fa0c as Text
                 }
               , { name =
                     "Control/Apply.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Apply.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Apply.js sha256:1df1f75957144e041efa516dd9e6ec30f3269bf88ff662748077ab6a5253eccb as Text
                 }
               , { name =
                     "Control/Apply.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Apply.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Apply.purs sha256:8bcf1c6fcee791d319b092f9a79c0874ca7afe0a515de1869a5d0bf63f753bee as Text
                 }
               , { name =
                     "Control/Bind.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Bind.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Bind.js sha256:d40110bd4f7538fe29828de316b1983a961f17329bf36e2e542cc2321ee34be5 as Text
                 }
               , { name =
                     "Control/Bind.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Bind.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Bind.purs sha256:151ec07317dc3cc6531923391244898d3f4971a6e2b128d2481618165490b82d as Text
                 }
               , { name =
                     "Control/Category.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Category.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Category.purs sha256:bf9f6bf1739d153a72e6b0f075c5ae2d7f9b9cad73b711b7915901cf5bb793bf as Text
                 }
               , { name =
                     "Control/Monad.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Monad.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Monad.purs sha256:860f1cdd5444643a450d1a9bcd351c469dd5a33af354dae3ef0e0ec6dc788523 as Text
                 }
               , { name =
                     "Control/Semigroupoid.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Semigroupoid.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Control/Semigroupoid.purs sha256:75a84491cfc511deab86b7ea89804a828e14faad7bf7f47451266f356f732ac2 as Text
                 }
               , { name =
                     "Data/Boolean.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Boolean.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Boolean.purs sha256:60cb1862d8d870bac4d0d4ecd37d86e044d540ec8bfb6fc056a964b759c2afa2 as Text
                 }
               , { name =
                     "Data/BooleanAlgebra.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/BooleanAlgebra.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/BooleanAlgebra.purs sha256:d66efebb9b27dd549add3c9e07558827a45571b07994c3babed5a4e4e12a5d3a as Text
                 }
               , { name =
                     "Data/Bounded.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Bounded.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Bounded.js sha256:4e55c181900c058e9853f22b9640b09c47f30907e9aad9ccf67e4a8c5bc3aef8 as Text
                 }
               , { name =
                     "Data/Bounded.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Bounded.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Bounded.purs sha256:4dfbd4eaac871949db31c4c3f49eb74292189d9629456df5b40e390d99280eb5 as Text
                 }
               , { name =
                     "Data/CommutativeRing.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/CommutativeRing.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/CommutativeRing.purs sha256:71df196132e6788cbb81cebf294948183c7bde97da9f400902ef9a8bfd1b38c4 as Text
                 }
               , { name =
                     "Data/DivisionRing.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/DivisionRing.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/DivisionRing.purs sha256:14f6f5af9fdf652b174aea2c7b309b202f1bae35af2a66f9fcfa1bbd2258bd57 as Text
                 }
               , { name =
                     "Data/Eq.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Eq.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Eq.js sha256:7be9cf8f776db0b95d8f1de441f6215ee7090c7698dd14409574fc94f42628b9 as Text
                 }
               , { name =
                     "Data/Eq.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Eq.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Eq.purs sha256:98565b36d26e7fc753c7b9cd9c593590398f4294dc78c7f8dacf4bd4bb00bf0d as Text
                 }
               , { name =
                     "Data/EuclideanRing.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/EuclideanRing.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/EuclideanRing.js sha256:e387c1992d32ea40bb1544722dc820951506cd17a6f9b9a9531071388811338a as Text
                 }
               , { name =
                     "Data/EuclideanRing.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/EuclideanRing.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/EuclideanRing.purs sha256:3a4f64a1fbf71de931f8e08d3b7faa00c05d2237f23792bdb5eb193d22686acb as Text
                 }
               , { name =
                     "Data/Field.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Field.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Field.purs sha256:55e24c2a995070694faa1841c3d9554ea388ed7f13133fffd9e31065faa4a719 as Text
                 }
               , { name =
                     "Data/Function.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Function.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Function.purs sha256:d955d2b27e7516d2ac9aab208a752a40bfb55c45e11f79da2ef9404c0b1d6b8d as Text
                 }
               , { name =
                     "Data/Functor.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Functor.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Functor.js sha256:03396bbf846c10602130dd6e58f46d432fa5b4fbe14d5771ecbc47911f155240 as Text
                 }
               , { name =
                     "Data/Functor.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Functor.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Functor.purs sha256:1c6a97cbf1dc8036bccd013fa7734dff3a99e7f96f9808ffea471b9a12e29a88 as Text
                 }
               , { name =
                     "Data/HeytingAlgebra.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/HeytingAlgebra.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/HeytingAlgebra.js sha256:f5505cd10d71d2c719322bc344df55348965e1ef60b57d81f6a3ed73c158cffe as Text
                 }
               , { name =
                     "Data/HeytingAlgebra.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/HeytingAlgebra.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/HeytingAlgebra.purs sha256:cba5499f626c9fec9ae6099c74361d9bc36fc3b470976d04d6a19be0623a0e95 as Text
                 }
               , { name =
                     "Data/NaturalTransformation.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/NaturalTransformation.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/NaturalTransformation.purs sha256:a27c6d1718fc729eead04c3a1d008655a9bfeb29642f651b2c44ff92a1ce5328 as Text
                 }
               , { name =
                     "Data/Ord.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord.js sha256:b3c35931f71c90dcaac5354a99893bb1d4e581c930494266c793e0950008f5dd as Text
                 }
               , { name =
                     "Data/Ord.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord.purs sha256:64f41638b097a84377dc48407f1d4b504efcae6e4e3e277d1f498c39cf105e50 as Text
                 }
               , { name =
                     "Data/Ord/Unsafe.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord/Unsafe.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord/Unsafe.js sha256:409eb643b7bbbfd9a2639db2f972d7c462c95c7202094f873d2910836aaf70ab as Text
                 }
               , { name =
                     "Data/Ord/Unsafe.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord/Unsafe.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ord/Unsafe.purs sha256:d73d3799ab41bb95b2dddba2616be5ebcb0a43ff5e558828adba773179fe3e82 as Text
                 }
               , { name =
                     "Data/Ordering.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ordering.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ordering.purs sha256:053c0ffe06b40093b35a9cfae419e83b2ba56674e198919786bb1aef043414f5 as Text
                 }
               , { name =
                     "Data/Ring.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ring.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ring.js sha256:6fee6e55df16ddff10eb685f99c4f38e02b2ae049d78bea1f78203657c9d5a23 as Text
                 }
               , { name =
                     "Data/Ring.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ring.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Ring.purs sha256:1d36b7319f560a0d0eb42dc381e2ae7e71bd0ded91876d9119f0c08009c1e00e as Text
                 }
               , { name =
                     "Data/Semigroup.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semigroup.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semigroup.js sha256:f23bb63e3fa641dc1ea1278bef0dbf0ed250f98a1d9bf7369d1acd45f3ab66df as Text
                 }
               , { name =
                     "Data/Semigroup.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semigroup.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semigroup.purs sha256:5a816840ec67e1577d48a2052c289ef186312c65ff4541023cdf575fd5cb2d7f as Text
                 }
               , { name =
                     "Data/Semiring.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semiring.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semiring.js sha256:67a522e05ac154f08eae97e5ca0e4b7a5b09c39b1b448f6b43fba231baf4c09c as Text
                 }
               , { name =
                     "Data/Semiring.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semiring.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Semiring.purs sha256:f85354f4ef917168cf97f20424e94323743e6cca5b8e6a12d80850a368d31749 as Text
                 }
               , { name =
                     "Data/Show.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Show.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Show.js sha256:5159b9a92a926c7ad156ebccf688d891be7dabe6b9c083e11437d3b54883e932 as Text
                 }
               , { name =
                     "Data/Show.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Show.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Show.purs sha256:015c2f8e723ebf768a6b0d42910ae58d7d79635c0bbedb118717a4bd33028014 as Text
                 }
               , { name =
                     "Data/Unit.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Unit.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Unit.js sha256:c9eb62d2305ad70dc130c71de34dd1632da388ee6820d6f59397c9e54f640da5 as Text
                 }
               , { name =
                     "Data/Unit.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Unit.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Unit.purs sha256:a43fab38cc4d2e459395684578782a7e919bd00983986b33a605a845fa84e27e as Text
                 }
               , { name =
                     "Data/Void.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Void.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Data/Void.purs sha256:403783c5e412359cdbd610005636286bf8c85423f638c9d3119af9d230d0b0da as Text
                 }
               , { name =
                     "Prelude.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Prelude.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-prelude/v3.1.1/src/Prelude.purs sha256:e48f35e78f8a39a2513b4e21485e7aacdcd29141e5c072b7306d33dd57940e32 as Text
                 }
               ]
           , dependencies =

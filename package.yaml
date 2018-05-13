@@ -58,6 +58,9 @@ executables:
 
 extra-source-files:
   - README.md
+  - purcel/*
+  - snapshot/*
+  - types/*
 
 ghc-options:
   - -Wall

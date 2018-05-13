@@ -6,12 +6,12 @@
               [ { name =
                     "Control/Monad/Eff/Console.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-console/v3.0.0/src/Control/Monad/Eff/Console.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-console/v3.0.0/src/Control/Monad/Eff/Console.js sha256:32a21f6aae564b65479708e3c81dd8f4848be971d5771d44d78baaf796c2da34 as Text
                 }
               , { name =
                     "Control/Monad/Eff/Console.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-console/v3.0.0/src/Control/Monad/Eff/Console.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-console/v3.0.0/src/Control/Monad/Eff/Console.purs sha256:a1b33a2fec633742ab5f20c38d92c1364197611be0ec1613035d7ee2f6718caa as Text
                 }
               ]
           , dependencies =

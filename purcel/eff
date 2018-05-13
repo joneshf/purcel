@@ -6,37 +6,37 @@
               [ { name =
                     "Control/Monad/Eff.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff.js sha256:7fdc0b61c7cd4851e86a31ed5c5202dd3ecbdb0d9471aaf2b2bd4d0a5d91b7c1 as Text
                 }
               , { name =
                     "Control/Monad/Eff.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff.purs sha256:50c003403ca3b17758dbe24a09648b17df4bf4be929a975475e4669f65ab822d as Text
                 }
               , { name =
                     "Control/Monad/Eff/Class.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Class.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Class.purs sha256:0e7109c8138bb93ee48bbb1976db127ee11299926fbe6d6900df193e3bfb3bbb as Text
                 }
               , { name =
                     "Control/Monad/Eff/Uncurried.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Uncurried.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Uncurried.js sha256:73d181fa92eab20a4547989d395ec2c54bc442d4d07e4fbcc5e02f86e30a023d as Text
                 }
               , { name =
                     "Control/Monad/Eff/Uncurried.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Uncurried.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Uncurried.purs sha256:301b33c7fd86b6f152e924ead84eece164b1baf36b24f2852385562b3a091fe8 as Text
                 }
               , { name =
                     "Control/Monad/Eff/Unsafe.js"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Unsafe.js as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Unsafe.js sha256:47e8575357474bd9a5c2ab34d10873e1450959972e608384a21e1e03cf1900ea as Text
                 }
               , { name =
                     "Control/Monad/Eff/Unsafe.purs"
                 , contents =
-                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Unsafe.purs as Text
+                    https://raw.githubusercontent.com/purescript/purescript-eff/v3.1.0/src/Control/Monad/Eff/Unsafe.purs sha256:2e751e8142eda568887aeb156a6d04cdeec81e7bdac2801c8cdf9b095e330095 as Text
                 }
               ]
           , dependencies =
