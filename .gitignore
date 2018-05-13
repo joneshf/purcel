@@ -2,6 +2,7 @@
 
 *.cabal
 .purcel
+ci/bintray.json
 
 # Created by https://www.gitignore.io/api/vim,osx,linux,macos,emacs,windows,haskell,purescript,sublimetext,visualstudiocode
 
