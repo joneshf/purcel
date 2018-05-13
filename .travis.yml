@@ -14,7 +14,8 @@ cache:
 
 deploy:
   - file: ci/bintray.json
-    key: ${BINTRAY_API_KEY}
+    key:
+      secure: Qy6PPuxWWhWFGT5Ma8ngmyCovMKKv1uUQRDp1urJKuKfJDmJkeGMqJTWUHfdqHJaepRYIthScLWU0dS5nqe5MWabHcXa1xr01jMYiYptXetYGBHdDYBNojkUKkWr1SEhqaPUgkefHZhTAGBe308jqNFOTBlJRUEhfd6Hb9oFua+B9a9BKAJdSPJMzGRbW3+Ega3uFWrvUQb5ffksbb0zJd8K70hqN9ffPEt1RZp0sSFLAdpO9BLsJlBehq4jUhxfvI/18L6P1tnI7BQDTA3ZnGf0MwX94uy55DaV1V1Ak9Lel32m8whwmM0UsikmemmStWph0T8FTu5leETQm3agWSIFoV3ohJXO4+e1WWUAckbNbGX6JaOFHPi5wf6SGN0Zm9/f8Kr1i+bLiCp48aFjwksR8nx2p0ouTHMN0/YIewcUe39DehVb6UZmFUG5KkjFOciZmtZLYCfkghmNxDj5u3oW4WOe1JMKcLSgoean+lI6U2XRkz4k6+XjAc91h6d2Uz89hygazHRApNKdlSfeNPwF0ZFuSvk+pPh3BrtSG6g9+u+97TTV4fIWrW0KZGMDnhkgfsRu3AQNd3R7uWq2Blh5IdWah6UkvpLH0yCUTYON2+eki/WdYqdDKEWE7JcNPlvCBDtsxcOyK0So1PGAIuaJS6sqdN8lJgfZJrabpTU=
     on:
       repo: joneshf/purcel
       tags: true
