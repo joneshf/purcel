@@ -1,5 +1,5 @@
     let snapshot =
-          ../snapshot/2018-02-04-16-12-56 sha256:f27c194932f31195723bacb5179813df0774fcee8baedffacf06aa338eab8eda 
+          ../snapshot/2018-05-12-17-15-57 sha256:225701da7b1fa7eb7d3b2e55a63fc0aafec2963bc4d6c0e6b9cafb2530668583 
 
 in  let purcel
         : ../types/Purcel 
