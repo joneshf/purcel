@@ -5,7 +5,7 @@ homepage: https://github.com/joneshf/purcel#readme
 license: BSD3
 maintainer: jones3.hardy@gmail.com
 name: purcel
-version: 0.1.0-rc2
+version: 0.1.0-rc3
 
 default-extensions:
   - BangPatterns
