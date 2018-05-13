@@ -1,0 +1,46 @@
+before_deploy:
+  - stack exec dhall-to-json <<< "./ci/bintray.dhall {date = \"$(date '+%Y-%m-%d')\", tag = \"${TRAVIS_TAG}\", tarFile = \"${TAR_FILE}\"}" > ci/bintray.json
+  - tar --create --file ${TAR_FILE} --directory bin --gzip purcel
+
+before_install:
+  - ci/install-stack.sh --os ${TRAVIS_OS_NAME} --verbose
+
+cache:
+  directories:
+    - ${HOME}/.local/bin
+    - .stack-root
+    - .stack-work
+  timeout: 1000
+
+deploy:
+  - file: ci/bintray.json
+    key:
+      secure: QSqZwJm7uYW+U1XEvn+UgVR8kNP1kWvOCiE5raw398PIdi35cHWX3kdgZ7/uFi6WZXqOfxjFvRWLqItp+r3nGrN9y6bK2r69xPA6vuaraiZkcIjpZyfA71Mf3iIwnle9Ha4e8T/oWDql0S6mf8RXw7RerV3GKMrGrZaRT7/io8Z8Ebd5pOovF5w9W1Lj1SnzhsYwWXDzhfJo93gA3TeKWivlBPnnVxQVDGw0/AcRyVnhWDJ7A8p1LSS7TjyGuv9D51MjQ4iVs9OGLZ14jcboRVLuRV9rQaNrRLmkBDggtcygjp/1ArzWhQxBIlWQUHymlEx9vz8MwxWjgZ5PK++W6AOJZoaBT0LYUnyc01JJMCP+DluIGdLGjJ7+AqWBmEw7a1u5Gsbx4/vK5vi1bniBn1Yu4/kEDQEx5KCcE3vK331jPln5IMFV6CGEnBAhkfvpLQMHeTHD0hbXlDCkJTPSvT7K74qG0bsCaYQlwbv3oSmlQF/LqC3jqoAUTc31EtuN1f3dpydczv6XIolGJfmKPQYsGnrr0CPn28Fpg4EGwaZ1u/gAQkwCF4HzevY875VLnthIqOF6qIlaG5OlLiIaEseNdtoI2zdZ3LpdWRvlq77KwihyxKok3i+EYbXGZNCVspYLV/8ORLJn7CHypMcF4axWCNkj280Vbvk6+88D1Ro=
+    on:
+      repo: joneshf/purcel
+      tags: true
+    provider: bintray
+    skip_cleanup: true
+    user: joneshf
+
+env:
+  global:
+    - PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
+    - STACK_ROOT=${TRAVIS_BUILD_DIR}/.stack-root
+    - TAR_FILE=purcel-${TRAVIS_TAG}-${TRAVIS_OS_NAME}.tar.gz
+
+install:
+  - stack setup
+  - stack build dhall-json
+
+language: c
+
+os:
+  - linux
+  - osx
+
+sudo: false
+
+script:
+  - stack build --copy-bins --local-bin-path bin --no-run-tests --test
+  - stack build --test

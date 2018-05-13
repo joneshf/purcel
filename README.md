@@ -1,5 +1,7 @@
 # purcel
 
+[![Build Status](https://travis-ci.com/joneshf/purcel.svg?branch=master)](https://travis-ci.com/joneshf/purcel)
+
 ## What is purcel?
 
 An experimental package manager for [PureScript][].
