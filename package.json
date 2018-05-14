@@ -1,0 +1,29 @@
+{
+  "author": "Hardy Jones <jones3.hardy@gmail.com>",
+  "bin": "./bin/purcel.js",
+  "bugs": {
+    "url": "https://github.com/joneshf/purcel/issues"
+  },
+  "description": "PureScript pretty printer",
+  "files": [
+    "bin/linux/purcel",
+    "bin/osx/purcel",
+    "bin/purcel.js"
+  ],
+  "homepage": "https://github.com/joneshf/purcel#README",
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "name": "purcel",
+  "os": [
+    "linux",
+    "darwin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/joneshf/purcel.git"
+  },
+  "scripts": {
+    "prepack": "ci/npm/prepack.sh"
+  },
+  "version": "0.1.0-rc4"
+}
