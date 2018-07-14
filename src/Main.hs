@@ -29,7 +29,6 @@ import "purcel" Purcel
 import qualified "rio" RIO.Directory
 import qualified "rio" RIO.FilePath
 import qualified "rio" RIO.Text
-import qualified "rio" RIO.Text.Lazy
 
 import qualified "purcel" Purcel
 
@@ -86,8 +85,8 @@ env envLogFunc detailedErrors = Env { envLogFunc, envReadPurcel, envWriteModules
   where
   envReadPurcel :: DhallFile -> IO Purcel
   envReadPurcel = case detailedErrors of
-    NoDetailedErrors  -> input auto . RIO.Text.Lazy.pack
-    YesDetailedErrors -> detailed . input auto . RIO.Text.Lazy.pack
+    NoDetailedErrors  -> input auto . RIO.Text.pack
+    YesDetailedErrors -> detailed . input auto . RIO.Text.pack
   envWriteModules :: [Module] -> PurcelDirectory -> IO ()
   envWriteModules modules = for_ modules . writeModule
     where
