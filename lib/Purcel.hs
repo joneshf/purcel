@@ -29,7 +29,7 @@ instance Interpret Purcel
 
 data Module
   = Module
-    { name     :: !Text
+    { name    :: !Text
     , contents :: !Text
     }
   deriving (Generic)
