@@ -1,0 +1,9 @@
+---
+auto: false
+enabled: true
+remote_files: []
+restylers:
+  - stylish-haskell:
+      include:
+        - '**/*.hs'
+statuses: true
