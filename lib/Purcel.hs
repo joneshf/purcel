@@ -29,7 +29,7 @@ instance Interpret Purcel
 
 data Module
   = Module
-    { name    :: !Text
+    { name     :: !Text
     , contents :: !Text
     }
   deriving (Generic)
@@ -71,8 +71,8 @@ writeModules modules directory = do
 
 data Env
   = Env
-    { envLogFunc    :: !LogFunc
-    , envReadPurcel :: !ReadPurcel
+    { envLogFunc      :: !LogFunc
+    , envReadPurcel   :: !ReadPurcel
     , envWriteModules :: !WriteModules
     }
 
