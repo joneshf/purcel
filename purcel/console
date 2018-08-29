@@ -15,7 +15,7 @@
                 }
               ]
           , dependencies =
-              ./prelude .modules # ./eff .modules
+              (./prelude).modules # (./eff).modules
           }
 
 in  purcel

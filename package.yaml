@@ -45,8 +45,8 @@ default-extensions:
 
 dependencies:
   - base == 4.11.1.0
-  - dhall == 1.13.1
-  - rio == 0.1.2.0
+  - dhall == 1.15.1
+  - rio == 0.1.4.0
 
 executables:
   purcel:
